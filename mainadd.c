@@ -11,9 +11,10 @@ int main(int argc,char *argv[])
              read_and_validate(argv,&add);
 		int option;
 		printf("= = = = = = Address Book = = = = = =\n");
-		printf("- - - - - - Features - - - - - - \n");
+
 		while(1)
 		{
+		        printf("- - - - - - Features - - - - - - \n");
 			printf("0 Exit \n1 Add Contact \n2 Search Contact\n3 Edit Contact\n4 Delect Contact \n5 List \n6 Save\n");
 			printf("Please select the option : ");
 			scanf("%d",&option);
@@ -22,12 +23,20 @@ int main(int argc,char *argv[])
 				case 0:
 					return 0;
 				case 1:
-					if(add_contact(&add)==a_sucess)
+					printf("- - - - - Add Contact:\n");
+					if(add_contact(&add)==a_success)
 						printf("Add contact is sucessfull\n");
 					else
 						printf("Enter the valid options :\n");
 					break;
 				case 2:
+					printf("- - - - - Search Contact by :\n");
+					if(search_contact(&add)==a_success)
+						printf("Search \n");
+					else
+						printf("Searching elements is not present\n");
+					break;
+
 			}
 
 		}
