@@ -13,7 +13,7 @@ typedef struct _address
 	 char ph[30];
 	 char email[40];
 	 FILE *file;
-	 int serial;
+	 int sl_no;
 	 char store[10];
 }address;
 

@@ -32,7 +32,7 @@ int main(int argc,char *argv[])
 				case 2:
 					printf("- - - - - Search Contact by :\n");
 					if(search_contact(&add)==a_success)
-						printf("Search \n");
+						printf("Search Successful\n");
 					else
 						printf("Searching elements is not present\n");
 					break;
