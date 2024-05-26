@@ -23,18 +23,27 @@ int main(int argc,char *argv[])
 				case 0:
 					return 0;
 				case 1:
-					printf("- - - - - Add Contact:\n");
+					printf("= = = = = = =     Add Contact     = = = = = = =\n");
 					if(add_contact(&add)==a_success)
 						printf("Add contact is sucessfull\n");
 					else
 						printf("Enter the valid options :\n");
 					break;
 				case 2:
-					printf("- - - - - Search Contact by :\n");
+					printf("= = = = = =      Search Contact      = = = = = =\n");
 					if(search_contact(&add)==a_success)
 						printf("Search Successful\n");
 					else
-						printf("Searching elements is not present\n");
+						printf("x x x x x x    Searching elements is not present    x x x x x x \n");
+					break;
+				case 3:
+					printf("= = = = = =  Search contact to edit  = = = = = = \n");
+					if(edit_contact(&add)==a_success)
+						printf("Edit successful\n");
+					else
+						printf("x x x x x x    Edit elements in not done    x x x x x x\n");
+					break;
+				default:
 					break;
 
 			}
