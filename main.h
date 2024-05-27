@@ -20,6 +20,8 @@ typedef struct _address
 Status add_contact(address *);
 Status add_space(char *);
 Status read_and_validate(char *[],address *);
+
+
 Status search_contact(address *);
 Status search_in_file(address *,char *);
 Status print_search(address *);
@@ -28,4 +30,10 @@ Status edit_in_file(address *);
 Status edit_contact(address *);
 Status read_contact(address *); 
 Status write_contact(address *);
+
+Status delete_contact(address *);
+Status delete_in_file(address *);
+Status rewrite_the_data(address *);
+
+Status list_contact(address *);
 #endif

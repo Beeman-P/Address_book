@@ -89,7 +89,6 @@ Status search_in_file(address *add,char *check)
 	char alpha[32];
 	char digit[165];
 	char punt[165];
-	char store[360];
 	char temp[2];
 	int i=0,j=0,k=0;
 	int count=0;
@@ -167,8 +166,8 @@ Status search_in_file(address *add,char *check)
 		}
 		for(int i=0;i<4;i++)
 		{
-		add->ph[i][0]='\0';
-		add->email[i][0]='\0';
+			   add->ph[i][0]='\0';
+	                   add->email[i][0]='\0';
 		}
 
 		fread(temp,1,1,add->file);

@@ -43,6 +43,20 @@ int main(int argc,char *argv[])
 					else
 						printf("x x x x x x    Edit elements in not done    x x x x x x\n");
 					break;
+				case 4:
+					printf("= = = = = =  Delete contact  = = = = = = \n");
+					if(delete_contact(&add)==a_success)
+					        printf("Delete Successful\n");
+					else
+						printf("x x x x x x    Contact is not deleted   x x x x x x \n");
+					break;
+				case 5:
+					printf("= = = = = = List Contact = = = = = =\n");
+					list_contact(&add);
+					break;
+				case 6:
+                                        printf("Data store in address.csv file\n");
+					break;
 				default:
 					break;
 
